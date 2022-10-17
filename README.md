@@ -8,3 +8,9 @@ Technical Purpose - Become more familar working with Nextjs, Express, and MongoD
 
 ## Technical Stack
 Nextjs, Express, MongoDB
+
+
+## Getting started
+
+1. Pull repo
+2. npm run dev
