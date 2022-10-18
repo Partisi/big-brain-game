@@ -9,18 +9,13 @@ export default function Home() {
   const router = useRouter();
   const createGoal = async (testtt) => {
     const randomNum = Math.floor(Math.random() * 1000);
-    const res = await fetch("/api/goals/add", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: `Test ${randomNum}`,
-        email: `test${randomNum}@test.com`,
-      }),
-    });
-    const data = await res.json();
-    console.log(data);
+
+    const res = await axios.put("/api/goals/add", {
+      name: `Test ${randomNum}`,
+      email: `test${randomNum}@test.com`,
+    })
+
+    console.log(res)
   };
 
   return (
