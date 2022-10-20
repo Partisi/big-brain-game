@@ -31,6 +31,7 @@ export default function Home() {
       >
         Click me!
       </button>
+      <button onClick={() => router.push('/login')}>Need to Login?</button>
     </div>
   );
 }
